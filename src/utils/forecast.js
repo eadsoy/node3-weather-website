@@ -13,7 +13,7 @@ const forecast = (lat, lon, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees out. The humidity is: ${body.current.humidity}% The visibility is: ${body.current.visibility}`
+        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees out. The humidity is: ${body.current.humidity}%. The visibility is: ${body.current.visibility}%.`
       );
     }
   });
